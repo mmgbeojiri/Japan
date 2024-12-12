@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    @apply font-sans font-medium box-border
+}
+.section {
+    @apply gap-5 p-4 flex flex-col justify-center items-center border-b-4 
+}
+
+.sectionHeader {
+    @apply text-2xl font-semibold;
+}
+
+.lightLayer1 {
+    @apply bg-slate-100 !text-slate-500 !border-slate-200 border
+}
+
+.lightLayer0 {
+    @apply !text-slate-950 !bg-slate-50 !border-slate-100
+}
+
+.darkLayer0 {
+    @apply !bg-slate-900 !text-slate-50
+}
+
+.darkLayer1 {
+    @apply !bg-slate-800 !text-slate-50 !border-slate-700
+}
+
+.link {
+    @apply rounded-lg border border bg-transparent
+     px-5 py-2.5 text-center text-sm font-medium text-gray-700 
+     shadow-none transition-all hover:bg-gray-100 
+     disabled:bg-transparent disabled:text-gray-400
+     
+}
+
+.radio {
+    @apply h-8 w-14 
+    rounded-full bg-gray-100 after:absolute after:top-[0.4rem] after:left-[0.5rem] after:h-5 after:w-5 after:rounded-full after:bg-white after:shadow after:transition-all after:content-[''] 
+    hover:bg-gray-200 peer-checked:bg-primarylight 
+    peer-checked:after:translate-x-full peer-checked:after:border-white 
+    peer-focus:ring-2 peer-focus:ring-primary peer-focus:ring-opacity-50
+    peer-disabled:cursor-not-allowed peer-disabled:bg-gray-100 peer-disabled:after:bg-gray-50
+}
+
+.image {
+    @apply h-screen object-cover snap-center 
+}
+
+.button {
+    @apply rounded-lg border border-primary bg-primary 
+    px-5 py-2.5 
+    text-center text-sm font-medium text-white 
+    shadow-sm transition-all 
+    hover:border-primarydark hover:bg-primarydark 
+    focus:ring focus:ring-primary 
+    disabled:cursor-not-allowed disabled:border-primary disabled:bg-primary
+}
+
+.navButton {
+    @apply text-slate-500 text-3xl bg-gray-800 w-16 h-16 rounded-3xl hover:cursor-pointer hover:shadow-xl hover:text-slate-50 m-2 duration-100
+}
+
+.aboutButton {
+    @apply inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2  hover:bg-white text-slate-500 hover:text-slate-900 hover:shadow duration-200 hover:px-5 
+}
+
+.hiddenSection {
+    @apply border p-3 rounded-xl shadow-xl duration-100
+}
+
+.aboutImage {
+    @apply h-[30vh] rounded-lg hover:shadow-xl duration-100 hover:brightness-105 hover:h-[31vh]
+}
+.statThing {
+    @apply flex items-center gap-2 border rounded-xl lightLayer1 hover:bg-slate-50 shadow-xl hover:shadow-2xl hover:-translate-y-1 p-4 duration-100
+}
+.video {
+    @apply w-full h-[36vw] rounded-lg
+}
+.iframe {
+    @apply w-[50vw] h-[50vh] rounded-xl shadow-lg
+}
+
