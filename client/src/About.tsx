@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./index.css"
 
 function About() {
-    let activeTab = 0
     
     const setTab = (x: number): undefined => {
-        activeTab = x
         const button = document.getElementById(x.toString())
         const allButtons = document.getElementsByClassName("aboutButton")
 
