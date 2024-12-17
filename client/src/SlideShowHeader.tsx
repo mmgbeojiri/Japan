@@ -10,7 +10,6 @@ function Header() {
   const scrollItBy = (x: number):undefined => {
     const heroGallery = document.getElementById("scroller")
     heroGallery?.scrollBy(x, 0)
-    console.log("ah")
   } 
     return (
         <>
